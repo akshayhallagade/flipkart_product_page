@@ -1,15 +1,18 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Roboto, Arial, sans-serif;
 }
 header {
-  border-bottom: 1px solid black;
-  height: 100px;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  /* visibility: hidden; */
 }
 /* ......................Navbar............................ */
 
 nav {
-  height: 65%;
+  height: 100%;
   background-color: blue;
   display: flex;
   align-items: center;
@@ -34,20 +37,29 @@ nav {
 .navbar_items {
   float: left;
 }
-.navbar_items img {
+.logo img {
   width: 80%;
 }
 .searchbar {
   width: 40%;
   height: 70%;
   /* border: 1px solid black; */
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navbar_items input {
-  width: 95%;
+.searchbar input::placeholder {
+  font-size: 15px;
+}
+.searchbar input {
+  width: 85%;
   height: 80%;
+  outline: 0;
+  border: none;
+}
+.searchbar i {
+  color: #3692ff;
 }
 .navbar ul {
   width: 50%;
@@ -73,9 +85,7 @@ nav {
 /* ..............................Shortsearches........................... */
 
 .shortsearch {
-  padding: 6px 0;
-  height: 35%;
-  /* border: 1px solid rgb(189, 23, 23); */
+  height: fit-content;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -84,20 +94,154 @@ nav {
 .shortsearch ul {
   width: 100%;
   height: fit-content;
-  /* border: 1px solid rgb(189, 23, 23); */
-  /* display: flex;
-  align-content: center;
-  justify-content: center; */
+  border-bottom: 1px solid rgb(179, 179, 179);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
 }
 .shortsearch ul li {
   width: 10%;
-  /* border: 1px solid rgb(189, 23, 23); */
   font-size: 14px;
+  padding: 15px 0;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-family: Roboto, Arial, sans-serif;
   float: left;
   list-style: none;
   box-sizing: border-box;
+  color: black;
+}
+
+/* ..............................Section................................ */
+
+section {
+  width: 100%;
+  height: 190vh;
+}
+
+.part1 {
+  width: 42%;
+  padding: 20px;
+  height: 400px;
+  /* background-color: rgb(175, 215, 215); */
+  float: left;
+  box-sizing: border-box;
+}
+.part2 {
+  width: 58%;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  /* background-color: rgb(10, 221, 221); */
+  float: left;
+}
+.head {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
+}
+.rating {
+  height: 40px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+.rating > p {
+  font-size: medium;
+  float: left;
+  font-size: 15px;
+  padding: 0 10px;
+}
+.rating_logo {
+  width: 45px;
+  height: 22px;
+  font-size: 20px;
+  /* border: 1px solid black; */
+  background-color: #388e3c;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+.rating_logo img {
+  float: left;
+  width: 11px;
+  height: 11px;
+}
+.rating_logo p {
+  float: left;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+.assured {
+  width: 80px;
+}
+.offer_amount {
+  color: green;
+  padding: 5px 0;
+  font-size: 15px;
+}
+.price_tags {
+  display: flex;
+  align-items: center;
+}
+.price_tag1 {
+  font-size: 40px;
+  float: left;
+}
+.price_tag2 {
+  font-size: 20px;
+  padding: 0 15px;
+  text-decoration: line-through;
+  color: grey;
+  float: left;
+}
+.offers {
+  padding: 10px 0;
+  /* border: 1px solid black; */
+}
+.offers h2 {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.offer_percent {
+  font-size: 20px;
+  color: green;
+}
+.offer_tag {
+  width: 15px;
+  float: left;
+  color: #388e3c;
+}
+.offer_line {
+  padding: 8px 0;
+}
+.offer_line p {
+  padding: 0 25px;
+  font-size: 15px;
+}
+.more_offers {
+  font-size: 15px;
+  color: #3692ff;
+}
+.exchange {
+  width: 60%;
+  border: 1px solid rgb(174, 174, 174);
+}
+.exchange_item {
+  padding: 17px;
+}
+.exchange_item label {
+  font-size: 15px;
+}
+.exchange_name {
+  padding: 0 10px;
+  font-size: 15px;
+}
+.exchange_amount {
+  float: right;
+  font-weight: 500;
 }
