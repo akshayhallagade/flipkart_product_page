@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  border-bottom: 1px solid black;
+  height: 100px;
+}
+/* ......................Navbar............................ */
+
+nav {
+  height: 65%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  width: 75%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .logo {
+  width: 10%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.navbar_items {
+  float: left;
+}
+.navbar_items img {
+  width: 80%;
+}
+.searchbar {
+  width: 40%;
+  height: 70%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_items input {
+  width: 95%;
+  height: 80%;
+}
+.navbar ul {
+  width: 50%;
+  text-align: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* border: 1px solid black; */
+}
+.navbar ul li {
+  width: 25%;
+  list-style: none;
+  font-size: 15px;
+  float: left;
+  /* display: inline-block; */
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* ..............................Shortsearches........................... */
+
+.shortsearch {
+  padding: 6px 0;
+  height: 35%;
+  /* border: 1px solid rgb(189, 23, 23); */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.shortsearch ul {
+  width: 100%;
+  height: fit-content;
+  /* border: 1px solid rgb(189, 23, 23); */
+  /* display: flex;
+  align-content: center;
+  justify-content: center; */
+  box-sizing: border-box;
+}
+.shortsearch ul li {
+  width: 10%;
+  /* border: 1px solid rgb(189, 23, 23); */
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  font-family: Roboto, Arial, sans-serif;
+  float: left;
+  list-style: none;
+  box-sizing: border-box;
+}
