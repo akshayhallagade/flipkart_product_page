@@ -1,16 +1,19 @@
+/* Reset styles for all elements */
 * {
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
 }
+
+/* Header styling */
 header {
   width: 100%;
   height: 60px;
   position: fixed;
   /* visibility: hidden; */
 }
-/* ......................Navbar............................ */
 
+/* Navbar styling */
 nav {
   height: 100%;
   background-color: blue;
@@ -18,72 +21,81 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+/* Main navbar container */
 .navbar {
   width: 75%;
   height: 100%;
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* Navbar logo styling */
 .navbar .logo {
   width: 10%;
   display: flex;
   align-content: center;
   justify-content: center;
-  /* border: 1px solid black; */
 }
 
+/* Navbar items container */
 .navbar_items {
   float: left;
 }
+
+/* Logo image styling */
 .logo img {
   width: 80%;
 }
+
+/* Search bar styling */
 .searchbar {
   width: 40%;
   height: 70%;
-  /* border: 1px solid black; */
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* Search bar input placeholder styling */
 .searchbar input::placeholder {
   font-size: 15px;
 }
+
+/* Search bar input styling */
 .searchbar input {
   width: 85%;
   height: 80%;
   outline: 0;
   border: none;
 }
+
+/* Search bar icon styling */
 .searchbar i {
   color: #3692ff;
 }
+
+/* Navbar list styling */
 .navbar ul {
   width: 50%;
   text-align: center;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* border: 1px solid black; */
 }
+
+/* Navbar list items styling */
 .navbar ul li {
   width: 25%;
   list-style: none;
   font-size: 15px;
   float: left;
-  /* display: inline-block; */
-  /* border: 1px solid black; */
   box-sizing: border-box;
   color: white;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 600;
 }
 
-/* ..............................Shortsearches........................... */
-
+/* Short searches styling */
 .shortsearch {
   height: fit-content;
   display: flex;
@@ -91,6 +103,8 @@ nav {
   justify-content: center;
   box-sizing: border-box;
 }
+
+/* Short searches list styling */
 .shortsearch ul {
   width: 100%;
   height: fit-content;
@@ -100,6 +114,8 @@ nav {
   justify-content: center;
   box-sizing: border-box;
 }
+
+/* Short searches list items styling */
 .shortsearch ul li {
   width: 10%;
   font-size: 14px;
@@ -113,40 +129,45 @@ nav {
   color: black;
 }
 
-/* ..............................Section................................ */
-
+/* Section styling */
 section {
   width: 100%;
   height: 190vh;
 }
 
+/* Section part1 styling */
 .part1 {
   width: 42%;
   padding: 20px;
   height: 400px;
-  /* background-color: rgb(175, 215, 215); */
   float: left;
   box-sizing: border-box;
 }
+
+/* Section part2 styling */
 .part2 {
   width: 58%;
   height: 400px;
   padding: 20px;
   box-sizing: border-box;
-  /* background-color: rgb(10, 221, 221); */
   float: left;
 }
+
+/* Section heading styling */
 .head {
   font-size: 20px;
   font-weight: 600;
   color: #212121;
 }
+
+/* Rating container styling */
 .rating {
   height: 40px;
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
 }
+
+/* Rating paragraph styling */
 .rating > p {
   font-size: medium;
   float: left;
@@ -154,11 +175,12 @@ section {
   padding: 0 10px;
   color: grey;
 }
+
+/* Rating logo container styling */
 .rating_logo {
   width: 45px;
   height: 22px;
   font-size: 20px;
-  /* border: 1px solid black; */
   background-color: #388e3c;
   border-radius: 5px;
   display: flex;
@@ -167,32 +189,45 @@ section {
   float: left;
 }
 
+/* Rating logo image styling */
 .rating_logo img {
   float: left;
   width: 11px;
   height: 11px;
 }
+
+/* Rating logo paragraph styling */
 .rating_logo p {
   float: left;
   font-size: 12px;
   color: rgb(255, 255, 255);
 }
+
+/* Assured styling */
 .assured {
   width: 80px;
 }
+
+/* Offer amount styling */
 .offer_amount {
   color: green;
   padding: 5px 0;
   font-size: 15px;
 }
+
+/* Price tags container styling */
 .price_tags {
   display: flex;
   align-items: center;
 }
+
+/* Price tag1 styling */
 .price_tag1 {
   font-size: 40px;
   float: left;
 }
+
+/* Price tag2 styling */
 .price_tag2 {
   font-size: 20px;
   padding: 0 15px;
@@ -200,90 +235,123 @@ section {
   color: grey;
   float: left;
 }
+
+/* Offer percent styling */
 .offer_percent {
   font-size: 20px;
   color: green;
 }
-/*............... offers  ..................*/
+
+/* Offers container styling */
 .offers {
   padding: 10px 0;
-  /* border: 1px solid black; */
 }
+
+/* Offers heading styling */
 .offers h2 {
   font-size: 18px;
   padding: 10px 0;
 }
+
+/* Offer line styling */
 .offer_line {
   padding: 8px 0;
   display: flex;
   align-items: center;
 }
+
+/* Offer line icon styling */
 .offer_line i {
   width: 15px;
   float: left;
   color: #388e3c;
 }
+
+/* Offer line paragraph styling */
 .offer_line p {
   padding: 0 10px 0 20px;
   font-size: 15px;
   float: left;
 }
+
+/* Offer line anchor styling */
 .offer_line a {
   font-size: 15px;
 }
+
+/* More offers styling */
 .more_offers {
   font-size: 15px;
   color: #3692ff;
 }
-/*................. exchange  ....................*/
+
+/* Exchange container styling */
 .exchange {
   width: 60%;
   border: 1px solid rgb(174, 174, 174);
 }
+
+/* Exchange item styling */
 .exchange_item {
   padding: 17px;
 }
+
+/* Exchange item label styling */
 .exchange_item label {
   font-size: 15px;
 }
+
+/* Exchange name styling */
 .exchange_name {
   padding: 0 10px;
   font-size: 15px;
 }
+
+/* Exchange amount styling */
 .exchange_amount {
   float: right;
   font-weight: 500;
 }
 
-/*................ sponsor ....... */
-
+/* Sponsor styling */
 .sponsor {
   width: 100%;
   height: 100px;
   padding: 50px 0;
 }
+
+/* Sponsor logo container styling */
 .sponsor_logo {
   width: 20%;
   height: 50px;
   float: left;
 }
+
+/* Sponsor logo image styling */
 .sponsor_logo img {
   width: 80px;
   padding: 5px;
   border: 1px solid rgb(166, 166, 166);
 }
+
+/* Sponsor text styling */
 .sponsor_text {
   width: 80%;
   float: left;
   font-size: 15px;
 }
+
+/* Sponsor text paragraph styling */
 .sponsor_text p {
   line-height: 25px;
 }
+
+/* Sponsor text anchor styling */
 .sponsor_text p a {
   padding: 0 3px;
   color: #3692ff;
   text-decoration: none;
 }
 
-/*.................Customize.................*/
+/* Customize section (empty for now) */
+/* ...............Customize................. */
