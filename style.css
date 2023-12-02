@@ -152,6 +152,7 @@ section {
   float: left;
   font-size: 15px;
   padding: 0 10px;
+  color: grey;
 }
 .rating_logo {
   width: 45px;
@@ -199,6 +200,11 @@ section {
   color: grey;
   float: left;
 }
+.offer_percent {
+  font-size: 20px;
+  color: green;
+}
+/*............... offers  ..................*/
 .offers {
   padding: 10px 0;
   /* border: 1px solid black; */
@@ -207,26 +213,29 @@ section {
   font-size: 18px;
   padding: 10px 0;
 }
-.offer_percent {
-  font-size: 20px;
-  color: green;
+.offer_line {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
 }
-.offer_tag {
+.offer_line i {
   width: 15px;
   float: left;
   color: #388e3c;
 }
-.offer_line {
-  padding: 8px 0;
-}
 .offer_line p {
-  padding: 0 25px;
+  padding: 0 10px 0 20px;
+  font-size: 15px;
+  float: left;
+}
+.offer_line a {
   font-size: 15px;
 }
 .more_offers {
   font-size: 15px;
   color: #3692ff;
 }
+/*................. exchange  ....................*/
 .exchange {
   width: 60%;
   border: 1px solid rgb(174, 174, 174);
@@ -245,3 +254,36 @@ section {
   float: right;
   font-weight: 500;
 }
+
+/*................ sponsor ....... */
+
+.sponsor {
+  width: 100%;
+  height: 100px;
+  padding: 50px 0;
+}
+.sponsor_logo {
+  width: 20%;
+  height: 50px;
+  float: left;
+}
+.sponsor_logo img {
+  width: 80px;
+  padding: 5px;
+  border: 1px solid rgb(166, 166, 166);
+}
+.sponsor_text {
+  width: 80%;
+  float: left;
+  font-size: 15px;
+}
+.sponsor_text p {
+  line-height: 25px;
+}
+.sponsor_text p a {
+  padding: 0 3px;
+  color: #3692ff;
+  text-decoration: none;
+}
+
+/*.................Customize.................*/
