@@ -1,18 +1,30 @@
-/* Resetting default margin, padding, and font for all elements */
+/* 
+   =======================
+   RESET AND GLOBAL STYLES
+   =======================
+*/
 * {
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
 }
 
-/* Styling for the fixed header */
+/*
+   =======================
+   HEADER STYLES
+   =======================
+*/
 header {
   width: 100%;
   height: 60px;
   position: fixed;
 }
 
-/* Styling for the navigation bar */
+/*
+   =======================
+   NAVIGATION BAR STYLES
+   =======================
+*/
 nav {
   height: 100%;
   background-color: blue;
@@ -21,7 +33,7 @@ nav {
   justify-content: center;
 }
 
-/* Styling for the main navigation container */
+/* Main navigation container styles */
 .navbar {
   width: 75%;
   height: 100%;
@@ -30,15 +42,21 @@ nav {
   justify-content: center;
 }
 
-/* Styling for the logo within the navigation bar */
+/* Logo styles within the navigation bar */
 .navbar .logo {
   width: 10%;
   display: flex;
   align-content: center;
   justify-content: center;
 }
+.navbar_items {
+  float: left;
+}
+.logo img {
+  width: 80%;
+}
 
-/* Styling for the search bar within the navigation bar */
+/* Search bar styles within the navigation bar */
 .searchbar {
   width: 40%;
   height: 70%;
@@ -48,12 +66,12 @@ nav {
   justify-content: center;
 }
 
-/* Styling for the search input placeholder text */
+/* Search input placeholder text styles */
 .searchbar input::placeholder {
   font-size: 15px;
 }
 
-/* Styling for the search input */
+/* Search input styles */
 .searchbar input {
   width: 85%;
   height: 80%;
@@ -61,18 +79,18 @@ nav {
   border: none;
 }
 
-/* Styling for the search icon in the search bar */
+/* Search icon styles */
 .searchbar i {
   color: #3692ff;
 }
 
-/* Styling for the unordered list within the navigation bar */
+/* Unordered list styles within the navigation bar */
 .navbar ul {
   width: 50%;
   text-align: center;
 }
 
-/* Styling for list items within the navigation bar */
+/* List item styles within the navigation bar */
 .navbar ul li {
   width: 25%;
   list-style: none;
@@ -84,7 +102,11 @@ nav {
   font-weight: 600;
 }
 
-/* Styling for the short searches section */
+/*
+   =======================
+   SHORT SEARCHES SECTION STYLES
+   =======================
+*/
 .shortsearch {
   height: fit-content;
   display: flex;
@@ -93,7 +115,7 @@ nav {
   box-sizing: border-box;
 }
 
-/* Styling for the unordered list in the short searches section */
+/* Unordered list styles in the short searches section */
 .shortsearch ul {
   width: 100%;
   height: fit-content;
@@ -104,7 +126,7 @@ nav {
   box-sizing: border-box;
 }
 
-/* Styling for list items in the short searches section */
+/* List item styles in the short searches section */
 .shortsearch ul li {
   width: 10%;
   font-size: 14px;
@@ -118,13 +140,17 @@ nav {
   color: black;
 }
 
-/* Styling for the main section of the webpage */
+/*
+   =======================
+   SECTION STYLES
+   =======================
+*/
 section {
   width: 100%;
   height: 190vh;
 }
 
-/* Styling for the left part of the section */
+/* Left part of the section styles */
 .part1 {
   width: 42%;
   padding: 20px;
@@ -133,7 +159,7 @@ section {
   box-sizing: border-box;
 }
 
-/* Styling for the right part of the section */
+/* Right part of the section styles */
 .part2 {
   width: 58%;
   height: 400px;
@@ -142,21 +168,21 @@ section {
   float: left;
 }
 
-/* Styling for section headings */
+/* Heading styles */
 .head {
   font-size: 20px;
   font-weight: 600;
   color: #212121;
 }
 
-/* Styling for the rating section */
+/* Rating section styles */
 .rating {
   height: 40px;
   display: flex;
   align-items: center;
 }
 
-/* Styling for rating text */
+/* Rating text styles */
 .rating > p {
   font-size: medium;
   float: left;
@@ -165,7 +191,7 @@ section {
   color: grey;
 }
 
-/* Styling for the rating logo */
+/* Rating logo styles */
 .rating_logo {
   width: 45px;
   height: 22px;
@@ -178,45 +204,45 @@ section {
   float: left;
 }
 
-/* Styling for the rating logo image */
+/* Rating logo image styles */
 .rating_logo img {
   float: left;
   width: 11px;
   height: 11px;
 }
 
-/* Styling for additional rating information */
+/* Additional rating information styles */
 .rating_logo p {
   float: left;
   font-size: 12px;
   color: rgb(255, 255, 255);
 }
 
-/* Styling for the assured section */
+/* Assured section styles */
 .assured {
   width: 80px;
 }
 
-/* Styling for the offer amount */
+/* Offer amount styles */
 .offer_amount {
   color: green;
   padding: 5px 0;
   font-size: 15px;
 }
 
-/* Styling for the price tags section */
+/* Price tags styles */
 .price_tags {
   display: flex;
   align-items: center;
 }
 
-/* Styling for the primary price tag */
+/* Primary price tag styles */
 .price_tag1 {
   font-size: 40px;
   float: left;
 }
 
-/* Styling for the secondary price tag (strike-through) */
+/* Secondary price tag (strike-through) styles */
 .price_tag2 {
   font-size: 20px;
   padding: 0 15px;
@@ -225,123 +251,147 @@ section {
   float: left;
 }
 
-/* Styling for the offer percentage */
+/* Offer percent styles */
 .offer_percent {
   font-size: 20px;
   color: green;
 }
 
-/* Styling for the offers section */
+/*
+   =======================
+   OFFERS SECTION STYLES
+   =======================
+*/
 .offers {
   padding: 10px 0;
 }
 
-/* Styling for offer section headings */
+/* Offer section heading styles */
 .offers h2 {
   font-size: 18px;
   padding: 10px 0;
 }
 
-/* Styling for individual offer lines */
+/* Individual offer line styles */
 .offer_line {
   padding: 8px 0;
   display: flex;
   align-items: center;
 }
 
-/* Styling for offer icons */
+/* Offer icon styles */
 .offer_line i {
   width: 15px;
   float: left;
   color: #388e3c;
 }
 
-/* Styling for offer text */
+/* Offer text styles */
 .offer_line p {
   padding: 0 10px 0 20px;
   font-size: 15px;
   float: left;
 }
 
-/* Styling for offer links */
+/* Offer link styles */
 .offer_line a {
   font-size: 15px;
 }
 
-/* Styling for the 'more offers' link */
+/* 'More offers' link styles */
 .more_offers {
   font-size: 15px;
   color: #3692ff;
 }
 
-/* Styling for the exchange section */
+/*
+   =======================
+   EXCHANGE SECTION STYLES
+   =======================
+*/
 .exchange {
   width: 60%;
   border: 1px solid rgb(174, 174, 174);
 }
 
-/* Styling for individual exchange items */
+/* Individual exchange item styles */
 .exchange_item {
   padding: 17px;
 }
 
-/* Styling for labels within exchange items */
+/* Label styles within exchange items */
 .exchange_item label {
   font-size: 15px;
 }
 
-/* Styling for exchange item names */
+/* Exchange item name styles */
 .exchange_name {
   padding: 0 10px;
   font-size: 15px;
 }
 
-/* Styling for exchange item amounts */
+/* Exchange item amount styles */
 .exchange_amount {
-  float: right
+  float: right;
   font-weight: 500;
 }
 
-/* Styling for the sponsor section */
+/*
+   =======================
+   SPONSOR SECTION STYLES
+   =======================
+*/
 .sponsor {
   width: 100%;
   height: 100px;
   padding: 50px 0;
 }
 
-/* Styling for sponsor logos */
+/* Sponsor logo styles */
 .sponsor_logo {
   width: 20%;
   height: 50px;
   float: left;
 }
 
-/* Styling for sponsor logo images */
+/* Sponsor logo image styles */
 .sponsor_logo img {
   width: 80px;
   padding: 5px;
   border: 1px solid rgb(166, 166, 166);
 }
 
-/* Styling for the sponsor text */
+/* Sponsor text styles */
 .sponsor_text {
   width: 80%;
   float: left;
   font-size: 15px;
 }
 
-/* Styling for sponsor text paragraphs */
+/* Sponsor text paragraph styles */
 .sponsor_text p {
   line-height: 25px;
 }
 
-/* Styling for sponsor text links */
+/* Sponsor text link styles */
 .sponsor_text p a {
   padding: 0 3px;
   color: #3692ff;
   text-decoration: none;
 }
 
-/* Comments added by GarvAgarwal26 */
+/*
+   =======================
+   CUSTOMIZE SECTION
+   =======================
+*/
+/* Add your custom styles here */
 
+/* 
+   Comments added by GarvAgarwal26
+
+   The above CSS provides styling for a webpage layout, including a fixed header, 
+   navigation bar, search bar, section with two parts, and various styled sections
+   like ratings, offers, exchange, and sponsors.
+*/
 
