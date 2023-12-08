@@ -18,6 +18,7 @@ header {
   width: 100%;
   height: 60px;
   position: fixed;
+  top: 0;
 }
 
 /*
@@ -27,7 +28,7 @@ header {
 */
 nav {
   height: 100%;
-  background-color: blue;
+  background-color: rgb(40, 116, 240);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +102,75 @@ nav {
   font-family: Roboto, Arial, sans-serif;
   font-weight: 600;
 }
+/*
+   =======================
+   LOGIN OVERLAY
+   =======================
+*/
+.login_overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #ccccccc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_box {
+  width: 650px;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  /* box-sizing: border-box; */
+}
+.log_in_info {
+  width: 40%;
+  height: 100%;
+  padding: 7% 5%;
+  background-color: #2874f0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
 
+.log_in_info h1 {
+  color: white;
+  /* align-items: center; */
+}
+.log_in_info h3 {
+  padding: 30px 0;
+  font-size: 20px;
+  color: rgb(219, 219, 219);
+  font-weight: 100;
+  /* align-items: center; */
+}
+.log_in_info img {
+  padding: 100px 0 0 0;
+  /* align-items: center; */
+}
+.log_in_section {
+  width: 60%;
+  height: 100%;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+.log_in_section p {
+  padding: 30px 0;
+  font-size: 12px;
+}
+.log_in_section input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+.log_in_section button {
+  padding: 10px 0;
+  border: none;
+  background-color: #fb641b;
+  color: white;
+}
 /*
    =======================
    SHORT SEARCHES SECTION STYLES
